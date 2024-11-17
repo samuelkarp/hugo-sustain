@@ -8,6 +8,14 @@
       <li><a href="mailto:{{ .Site.Params.Social.Email }}" class="u-url" rel="me"><i class="fa-solid fa-envelope"></i></a></li>
     {{ end }}
 
+    {{ if .Site.Params.Social.Bluesky }}
+      <li><a href="https://bsky.app/profile/{{ .Site.Params.Social.Bluesky }}" class="u-url" rel="me"><i class="fa-brands fa-bluesky"></i></a></li>
+    {{ end }}
+
+    {{ if .Site.Params.Social.Mastodon }}
+      <li><a href="{{ .Site.Params.Social.Mastodon}}" class="u-url" rel="me"><i class="fa-brands fa-mastodon"></i></a></li>
+    {{ end }}
+
     {{ if .Site.Params.Social.Twitter }}
       <li><a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}" class="u-url" rel="me"><i class="fa-brands fa-twitter"></i></a></li>
     {{ end }}
